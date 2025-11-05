@@ -58,3 +58,42 @@ myvar3 = "C-3PO"
 
 print(myvar)
 
+
+
+
+# CAMEL CASE
+myVariableName = 'sip esto es un camello '
+
+# PASCAL CASE
+MyVariableName = 'esto es pascal case'
+
+# SNAKE CASE
+my_variable_name = 'esto es snake case'
+
+
+print(myVariableName ,MyVariableName, my_variable_name)
+
+
+
+
+# ######################################################### ASIGNACION MULTIPLE
+
+e, r, c = "Orange", 'Banana', "Apple"
+print(e)
+print(r)
+print(c)
+
+
+# ######################################################### CONCATENACION DE VARIABLES
+a = "Hello"
+b = "World"
+c = a + b
+d = a+ ' ' + b
+print(c)
+print(d)
+
+n = 5
+m = 20
+
+print(n + m)
+
