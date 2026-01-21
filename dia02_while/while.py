@@ -16,3 +16,27 @@ while opcion == "s":
 	
 	opcion = input('quieres intentar de nuevo? (s/n)')
 	
+
+
+"""
+La identacion o el tab, tabulado, es fundamental en python  , son los espacios al inicio de la linea
+se usa para saber que lineas pertenecen a un bloque (if,whle,etc)
+
+"""
+
+
+#En py los dos puntos : indican que empieza un bloque de codigo 
+
+
+edad = 20
+
+if edad >= 18:
+	#Estas lineas estan indentadas
+	#Por lo tanto pertnecen al if
+	print("Eres mayor de edad")
+	print("puedes continuar")
+
+
+#Aqui ya no hay indentacion 
+# Esto significa que esta linea no pertenece al if
+print("Fin del programa") 
