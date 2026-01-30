@@ -1,4 +1,4 @@
-
+"""
 my_condition = int(input("Escribe un numero del 1 al 20: "))
 
 if my_condition < 5:
@@ -15,6 +15,20 @@ elif my_condition == 1:
 else:
     print("Es menor o igual que 10 o mayor o igual que 20")
 
+"""
 
+
+
+
+my_string = " "
+
+if my_string:
+    print("Mi cadena de texto no es vacia")
+
+if my_string == " ":
+    print("Mi cadena de texto coinciden")
+
+else:
+    print("No coincide")
 
 
