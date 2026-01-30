@@ -10,7 +10,6 @@ while my_condition < 10:  # mientras que mi vriable sea menor que 10 , siempre i
 
 print('La ejecucion continua')
 
-'''
 
 my_cond = int(input('Escribe un numero :'))
 
@@ -24,5 +23,17 @@ if my_cond == 10:
 else:
     print('El numero ', my_cond,' es mayor o igual que 10')
 
+'''
 
-  
+
+### BRAKE ###
+
+my_cond = int(input('Ingresa un numero: '))
+
+while my_cond < 20:
+    my_cond += 1
+    if my_cond == 15:
+        print('Mi condicion es 15')
+        break # si la condicion es 15 , se detiene aunque sea menor que 20
+
+    print('my_cond')
