@@ -42,3 +42,6 @@ c3=(fahrenheit_to_celsius(50))
 print('77 grados fahrenhait a celsius es:',c1,'° grados celsius ') # imprimir el resultado
 print('95 grados fahrenhait a celsius es:',c2,'° grados celsius ') # imprimir el resultado
 print('50 grados fahrenhait a celsius es:',c3,'° grados celsius ') # imprimir el resultado
+
+
+
