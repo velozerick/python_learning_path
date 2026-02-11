@@ -63,13 +63,13 @@ porcentaje_p,porcentaje_r,contador_p,contador_r,total = resumen(lista_permitidos
 
 
 
-
-print('Los cultivos permitidos son:',lista_permitidos,'\n')
-print('Los cultivos rechazados son:',lista_rechazados,'\n')
-
+print('-------------------------------------------------------')
+print('Los cultivos permitidos son:',set(lista_permitidos),'\n')
+print('Los cultivos rechazados son:',set(lista_rechazados),'\n')
+print('-------------------------------------------------------')
 print('La cantidad de cultivos permitidos son:',contador_p,'\n')
 print('La cantidad de cultivos rechazados son:',contador_r,'\n')
+print('-------------------------------------------------------')
 print('el total de cultivos son:',total)
-
 print('EL porcentaje de permitidos:',round(porcentaje_p,2),'%')
 print('El porcentaje de rechazados:',round(porcentaje_r,2),'%')
