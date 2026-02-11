@@ -39,6 +39,6 @@ def calcular_precio_seguro(precio, iva = 0.16):
     else:
         precio_final = precio * (1 + iva)
     return precio_final
-resultado = calcular_precio_seguro(50)
+resultado = calcular_precio_seguro(20)
 
-print(round(resultado))
+print(resultado)
