@@ -49,7 +49,7 @@ def registrar_errores(errores):
     for error in errores:
         LOGS.append(error) #esto modifica algo externo
 
-ok,usuario,errores = validar_usuario("Erick","erickcorreo.com")
+ok,usuario,errores = validar_usuario("Erick","erick@correo.com")
 
 if not ok:
     registrar_errores(errores)
@@ -103,7 +103,7 @@ def registro_errores(errores):
         Logs.append(error)
 
 
-ok,clean_password,errores = validar_password(" hola1234")
+ok,clean_password,errores = validar_password(" helloThere2505")
 
 if not ok:
     registro_errores(errores)
