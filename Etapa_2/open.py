@@ -72,3 +72,21 @@ print(contenido)
 
 
 
+
+
+
+
+
+def clientes():
+    lista =[]
+    with open("lista_de_clientes.txt", "r")as archivo:
+        lineas = archivo.readlines()
+        for linea in lineas:
+            if linea.startswith("Nombre"):
+                lista.append(linea.strip())
+        return lista
+
+resultado = clientes()
+print(resultado)
+
+
