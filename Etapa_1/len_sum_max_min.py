@@ -77,10 +77,16 @@ def pedidos(*precio,**datos_cliente):
     servicio_caro = max(precio)
     servicio_barato =min(precio)
 
+    #calcular descuento si pasa los 5000
+    if total > 5000:
+        total_descuento = total * (1 - 0.10)
+        
+
     #devolver estructurado
 
     resumen = {
         "total" : total,
+        "total con descuento":total_descuento,
         "cantidad de servicios" : cantidad_servicios,
         "servicio mas caro" : servicio_caro,
         "servicio mas barato" : servicio_barato
@@ -96,6 +102,8 @@ ok,mensaje,pedido = pedidos(
     prioridad="alta"
 
 )
+
+
 
 if ok:
     print(mensaje)
