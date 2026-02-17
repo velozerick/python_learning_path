@@ -110,11 +110,7 @@ if not ok:
 else:
     print(clean_password,"Contraseña correcta")
 print("LOGS",Logs)
-        
-    
-        
-    
-    
+
 
 
 
