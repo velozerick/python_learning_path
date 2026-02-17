@@ -1,0 +1,31 @@
+Hasta ahora todo lo que hemos hecho vive en memoria
+por ejemplo:
+
+usuarios =[]
+
+Si cierro el programa se pierde todo y eso significa que el sistema no es persistente
+
+persistencia = guardar informacion para que exista aunque el programa termine 
+como:
+guardar pedidos
+guardar logs
+guardar usuarios
+guardar reportes
+
+
+Un archivo en python es simplemente texto guardado en disco 
+clientes.txt
+pedidos.txt
+los.txt
+
+La herrameinta base    open()
+
+open("archivo.txt,modo)
+
+MODOS PRINCIPALES
+
+"r" = read
+"w" = write(borra lo anterior)
+"a" = append(agregar al final)
+
+pasemos a codigo 
