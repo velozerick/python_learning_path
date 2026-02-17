@@ -64,3 +64,11 @@ crear_archivo_cliente(datos_cliente)
 
 
 #"r"
+
+
+with open("clientes.txt", "r") as archivo:
+   contenido = archivo.read()
+print(contenido)
+
+
+
