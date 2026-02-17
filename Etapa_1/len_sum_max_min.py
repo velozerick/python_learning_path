@@ -55,3 +55,50 @@ def calcular_total(*precios):
 
 def crear_usuario(**datos):
     return datos
+
+
+
+
+
+
+
+#--------------------
+#Sistema basico de pedidos 
+
+def pedidos(*precio,**datos_cliente):
+    #si no hay datos
+    if not precio:
+        return False ,"No se enviarion servicios", None
+    
+    #Calcular
+
+    total = sum(precio)
+    cantidad_servicios = len(precio)
+    servicio_caro = max(precio)
+    servicio_barato =min(precio)
+
+    #devolver estructurado
+
+    resumen = {
+        "total" : total,
+        "cantidad de servicios" : cantidad_servicios,
+        "servicio mas caro" : servicio_caro,
+        "servicio mas barato" : servicio_barato
+    }
+
+    return True, "resumen creado correctamente",resumen
+
+
+ok,mensaje,pedido = pedidos(
+    15500,3529,452,20,6529,
+    nombre = "SYREI",
+    ciudad="Guadalajara",
+    prioridad="alta"
+
+)
+
+if ok:
+    print(mensaje)
+    print(pedido)
+else:
+    print("error:", mensaje)
