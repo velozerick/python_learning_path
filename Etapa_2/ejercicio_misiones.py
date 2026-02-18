@@ -1,0 +1,22 @@
+#Crea una funcion qu edevuelva solo las misiones activas
+
+def mission_active ():
+    list_active = []
+    with open("misiones.txt", "r") as archivo: 
+        content = archivo.readlines()
+        for line in content:
+            partes = line.strip().split(":")
+            if partes[0] == "Mision":
+                nombre = partes[1]
+            if partes[0] == "Estado" and partes[1] == " activa":
+                list_active.append(nombre)
+    return list_active
+
+
+misiones_activas = mission_active()
+print("Las misiones activas son : ",misiones_activas)
+
+
+
+
+# devolver un diccionario solo con las misiones activas y su destino

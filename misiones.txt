@@ -1,0 +1,15 @@
+Mision: Artemis
+Destino: Luna
+Estado: completada
+
+Mision: Voyager
+Destino: Espacio profundo
+Estado: activa
+
+Mision: Perseverance
+Destino: Marte
+Estado: activa
+
+Mision: Apollo 13
+Destino: Luna
+Estado: fallida
