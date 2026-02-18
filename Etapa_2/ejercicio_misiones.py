@@ -1,4 +1,4 @@
-#Crea una funcion qu edevuelva solo las misiones activas
+#Crea una funcion que devuelva solo las misiones activas
 
 def mission_active ():
     list_active = []
@@ -15,9 +15,6 @@ def mission_active ():
 
 misiones_activas = mission_active()
 print("Las misiones activas son : ",misiones_activas)
-
-
-
 
 # devolver un diccionario solo con las misiones activas y su destino
 
