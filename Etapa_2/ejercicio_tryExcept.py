@@ -16,16 +16,35 @@ def leer_misiones(path):
                     lista_misiones.append(i_limpio)
     #except
     except FileNotFoundError:
-        error = "Archivo no encontrado"
+        error = "\n--- ¡Archivo no encontrado ¡ ---\n"
     
     return lista_misiones , error
 
 lista_misiones, error = leer_misiones("mission.txt")
 
-if error is None:
+if not error:
     print(lista_misiones)
 else:
     print("Error: " ,error)
 
 
+
+
+#############################
+
+def dividir(a ,b):
+    error = None
+    opn = None
+    try:
+        opn = a / b
+    except ZeroDivisionError:
+        error = "No se puede dividir entre cero "
+    return opn, error
+
+opn ,error = dividir(5, 0)
+
+if not error:
+    print(opn)
+else:
+    print("Error, esta mal en algo ", error)
 
