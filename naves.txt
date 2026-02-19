@@ -1,0 +1,11 @@
+Nave: Falcon
+Capacidad: 5
+Estado: activa
+
+Nave: Orion
+Capacidad: 3
+Estado: mantenimiento
+
+Nave: Dragon
+Capacidad: 7
+Estado: activa
