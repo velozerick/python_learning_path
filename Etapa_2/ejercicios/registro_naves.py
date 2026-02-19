@@ -15,20 +15,25 @@ def leer_naves(path):
         with open(path , "r") as archivo:
           contenido = archivo.readlines()
           for lines in contenido:
-              partes = lines.strip().split(": ")
-              if partes[0] == "Nave":
-                 nave = partes[1]
-              if partes[0] == "Estado" and partes[1] == " activa":
-                 estado = partes[1]
-              if partes[0] == "Capacidad":
-                 capacidad = partes[1]
+              partes = lines.strip().split(": ", 1)
+              if len(partes) != 2:
+                  continue
+              key = partes[0].strip()
+              value = partes[1].strip()
 
-                 dicc_naves = {
+              if partes[0] == "Nave":
+                  nave = partes[1]
+              if partes[0] == "Estado" and partes[1] == " activa":
+                  estado = partes[1]
+              if partes[0] == "Capacidad":
+                  capacidad = partes[1]
+
+                  dicc_naves = {
                   "Nave": nave ,
                   #"Estado": estado,
                   "Capacidad": capacidad
                }
-                 naves.append(dicc_naves)
+                  naves.append(dicc_naves)
 
 
     except FileNotFoundError: 
