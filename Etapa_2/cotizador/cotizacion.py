@@ -18,10 +18,12 @@ servicios = {
 
 def cotizador (servicio, unidades,urgente,empresa):
     
-    #print("DEBUG servicio:", servicio, type(servicio))
-    if servicio not in servicios:
-        return "error: solo puedes seleccionar las opciones que se muestran"
-
+    '''
+    print("DEBUG servicio:", servicio, type(servicio))
+    print("SERVICIO", servicio)
+    print("TIPO", type(servicio))
+    print("LLAVES",servicios.keys())
+    '''
     price = servicios[servicio]
     subtotal =  price * unidades
     urgente = urgente.strip().lower()
