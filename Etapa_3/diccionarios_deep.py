@@ -50,3 +50,42 @@ print(names)
 
 precios = [n ["precio"] for n in servicios if n ["precio"] > 400]
 print(precios)
+
+
+
+
+
+
+
+print("\n -----DICCIONARIO QUE CONTIENE LISTA DE DICCIONARIOS----- \n")
+##########  DICCIONARIO QUE CONTIENE LISTA DE DICCIONARIOS
+
+# diccionario -> clave -> lista -> indice -> clave
+
+empresa_data = {
+    "nombre_empresa": "SYREI",
+    "ubicacion": {
+        "ciudad": "Guadalajara",
+        "pais": "México"
+    },
+    "servicios":[
+        {"id": 1, "nombre": "soporte", "precio": 250},
+        {"id": 2, "nombre": "CCTV", "precio": 890},
+        {"id": 3, "nombre": "redes", "precio": 430}
+    ]
+
+    }
+
+print(empresa_data["servicios"][2]["nombre"]) # el nombre del tercer servicio
+print(empresa_data["ubicacion"]["ciudad"]) # imprimir la ciudad
+
+high_price = [n["precio"] for n in empresa_data["servicios"] if n["precio"] > 300]
+print(high_price)
+
+
+
+
+
+for i in empresa_data["servicios"]:
+    print(i["nombre"], i["precio"])
+
