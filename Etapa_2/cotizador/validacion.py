@@ -22,4 +22,4 @@ def pedir_sn(mensaje):
              return resp
         print("Error, solo se puede seleccionar 's' o 'n' ")
 
-      
+
