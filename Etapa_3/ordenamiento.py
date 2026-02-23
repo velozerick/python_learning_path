@@ -34,4 +34,6 @@ print(servicios_ordenados)
 
 servicios_nombre = sorted(servicios, key = lambda n: n["nombre"])
 
-order_name = []
+order_name = [n ["nombre"] for n in servicios_ordenados ]
+print(order_name)
+
