@@ -50,3 +50,42 @@ cultivo2 = Cultivo("Cilantro",7) #caja 7
 #Usamos el METODO del objeto
 cultivo1.regar()
 cultivo1.regar()
+
+
+
+
+
+
+
+#crear clase jugador 
+class Jugador:
+
+    def __init__ (self, nombre, vida, poder_ataque):
+
+        #ATRIBUTOS
+        self.nombre = nombre
+        self.vida = vida
+        self.poder_ataque = poder_ataque
+        
+
+    #METODOS
+    def recibir_golpe (self,cantidad):
+        self.vida -= cantidad
+
+        if self.vida < 0:
+            self.vida = 0
+            print(f"lo siento {self.nombre}. has muerto")
+    
+    def atacar(self, otro_jugador):
+        otro_jugador.recibir_golpe(self.poder_ataque)
+        print(f"{self.nombre} atacó a {otro_jugador.nombre}")
+
+
+j1 = Jugador("Steve",10 ,5)
+j2 = Jugador("Creeper",10,8)
+
+j1.atacar(j2)
+j1.atacar(j2)
+
+
+
