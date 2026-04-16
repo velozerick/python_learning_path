@@ -50,3 +50,4 @@ Debes calcular:
 
 Debes imprimir un resumen claro, por ejemplo:
 
+Hola Marco Total gastado 150, Dinero restante 50.
